@@ -23,11 +23,11 @@ class ViewController: UIViewController {
 
     @IBAction func alertOut() {
         
-        let popOut = UIAlertController(title: "Swift", message: "Alert function", preferredStyle: .Alert)
+        let popOut = UIAlertController(title: "Swift", message: "Alert function", preferredStyle: .alert)
         
-        popOut.addAction(UIAlertAction(title: "Exit", style: .Destructive, handler: nil ))
+        popOut.addAction(UIAlertAction(title: "Exit", style: .destructive, handler: nil ))
         
-        self.presentViewController(popOut, animated: false, completion: nil )
+        self.present(popOut, animated: false, completion: nil )
     }
 }
 
